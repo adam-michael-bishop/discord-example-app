@@ -80,3 +80,10 @@ export const CHALLENGE_COMMAND = {
   ],
   type: 1,
 };
+
+// whoAmI command
+export const WHOAMI_COMMAND = {
+  name: 'whoAmI',
+  description: 'Responds with the username of the person sending the command',
+  type: 1
+};

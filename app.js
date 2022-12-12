@@ -12,6 +12,7 @@ import { getShuffledOptions, getResult } from './game.js';
 import {
   CHALLENGE_COMMAND,
   TEST_COMMAND,
+  WHOAMI_COMMAND,
   HasGuildCommands,
 } from './commands.js';
 
@@ -90,6 +91,13 @@ app.post('/interactions', async function (req, res) {
           ],
         },
       });
+    }
+    // "whoAmI" guild command
+    if (name === "whoAmI") {
+      /**
+       * TODO:
+       * write code for the whoAmI command to respond with the requesters username
+       */
     }
   }
 
@@ -182,5 +190,6 @@ app.listen(PORT, () => {
   HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, [
     TEST_COMMAND,
     CHALLENGE_COMMAND,
+    WHOAMI_COMMAND
   ]);
 });
