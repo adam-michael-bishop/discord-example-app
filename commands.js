@@ -82,8 +82,8 @@ export const CHALLENGE_COMMAND = {
 };
 
 // whoAmI command
-export const WHOAMI_COMMAND = {
-  name: 'whoAmI',
+export const IDENTITY_COMMAND = {
+  name: 'identity',
   description: 'Responds with the username of the person sending the command',
   type: 1
 };
